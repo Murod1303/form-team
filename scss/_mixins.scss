@@ -2,7 +2,6 @@
   display: flex;
   justify-content: $jc;
   align-items: $ai;
-  flex-direction: $fdrc;
 }
 
 @mixin list {
@@ -11,12 +10,26 @@
   list-style: none;
 }
 
-@mixin pseudo-el($w, $h, $bgi) {
+@mixin default-text($mb, $fz:16px, $fw:400, $lh:normal, $ls:normal) {
+  margin-top: 0;
+  margin-bottom: $mb;
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin btn($p, $bgc) {
+  padding: $p;
+  border: none;
+  background-color: $bgc;
+}
+
+@mixin psevdo-el($w, $h, $bgp:center) {
   display: block;
   width: $w;
   height: $h;
-  background-image: url($bgi);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: $bgp;
   content: "";
 }
