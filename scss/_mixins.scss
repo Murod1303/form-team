@@ -11,3 +11,12 @@
   list-style: none;
 }
 
+@mixin pseudo-el($w, $h, $bgi) {
+  display: block;
+  width: $w;
+  height: $h;
+  background-image: url($bgi);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}

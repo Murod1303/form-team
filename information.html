@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Form</title>
+</head>
+<body>
+  <main class="site-main">
+    <section class="site-main__information information">
+      <div class="container">
+        <div class="information__inner">
+          <div class="information__data">
+            <!-- Retina image -->
+            <img class="information__user-img" src="./images/user-information.svg"
+            width="100"
+            height="100"
+            alt="User's image">
+            <output class="information__user-name js-information__user-name">
+              {Name and surname}
+            </output>
+            <ul class="information__list">
+              <li class="information__item">
+                Email:
+                <output class="information__item-incoming js-information__item-incoming"></output>
+              </li>
+              <li class="information__item information__item--cake">
+                Date of birth:
+                <output class="information__item-incoming js-information__item-incoming--cake"></output>
+              </li>
+              <li class="information__item information__item--globe">
+                Nation:
+                <output class="information__item-incoming js-information__item-incoming--globe"></output>
+              </li>
+              <li class="information__item information__item--houses">
+                City or Country:
+                <output class="information__item-incoming js-information__item-incoming--houses"></output>
+              </li>
+              <li class="information__item information__item--pin">
+                Address, Street:
+                <output class="information__item-incoming js-information__item-incoming--pin"></output>
+              </li>
+              <li class="information__item information__item--numbers">
+                ZIP code:
+                <output class="information__item-incoming js-information__item-incoming--number"></output>
+              </li>
+            </ul>
+            <button class="information__btn" type="button">Elimina l'account</button>
+            <a href="./index.html" class="site-logo">
+              <!-- Retina image -->
+              <img class="" src="./images/logo-information.png"
+              width="146"
+              height="43"
+              alt="Site logo"
+              srcset="./images/logo-information.png  1x, ./images/logo-information@2x.png  2x">
+            </a>
+            <div class="information__copyright-wrapper">
+              <p class="information__copyright">
+                © Copy-Right - HowDataWork.it Creato da Rathour Vinay
+              </p>
+            </div>
+            <ul class="information__privacy-list">
+              <li class="information__privacy-item">
+                <a class="information__privacy-link" href="#">Terms and Conditions</a>
+              </li>
+              <li class="information__privacy-item">
+                <a class="information__privacy-link" href="#"> • Privacy Police</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
