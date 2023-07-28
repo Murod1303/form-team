@@ -11,6 +11,12 @@ body {
   height: 100%;
   font-family: "Roboto", "Arial", sans-serif;
 }
+
+img {
+  display: block;
+  height: auto;
+}
+
 main {
   flex-grow: 1;
 }
