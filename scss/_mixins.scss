@@ -1,0 +1,12 @@
+@mixin flexbox($jc, $ai, $fdrc) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fdrc;
+}
+@mixin list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
