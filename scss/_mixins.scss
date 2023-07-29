@@ -1,4 +1,4 @@
-@mixin flexbox($jc, $ai, $fdrc) {
+@mixin flexbox($jc:space-between, $ai:center,) {
   display: flex;
   justify-content: $jc;
   align-items: $ai;

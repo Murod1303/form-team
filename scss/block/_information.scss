@@ -5,8 +5,15 @@
   background-image: linear-gradient(90deg, #c80090 2.19%, #0500ff 100%);
 }
 
+.information__inner {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 22px;
+}
+
 .information__data {
   max-width: 353px;
+  width: 100%;
   padding-top: 24px;
   padding-bottom: 21px;
   background-color: #f9f9fb;
@@ -46,8 +53,9 @@
     margin-bottom: 14px;
   }
   &::before {
-    @include m.pseudo-el(40px, 40px, "../../images/letter-information.png");
+    @include m.psevdo-el(40px, 40px);
     margin-right: 6px;
+    background-image: url("../../images/letter-information.png");
   }
 }
 
@@ -121,4 +129,130 @@
   font-size: 12px;
   font-weight: 400;
   text-decoration: none;
+}
+
+.information__profile {
+  padding: 30px 35px 35px 37px;
+  background-color: #f9f9fb;
+  border: 2px solid #c4c4c4;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.profile__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 24px
+}
+
+.profile__subtitle {
+  @include m.default-text(0, 24px, 600, 30px);
+}
+
+.profile__btn {
+  margin: 0;  
+}
+
+.profile__user {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+  flex-grow: 1;
+  padding: 25px 37px 24px 51px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.profile__form {
+  max-width: 464px;
+  width: 100%;
+  height: 29px;
+  margin-bottom: 13px;
+}
+
+.profile__input {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.profile__data {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.profile__main-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.profile__label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  max-width: 307px;
+  width: 100%;
+}
+
+.profile__main-input {
+  padding: 6px 16px;  
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  background: #fff;
+  &::placeholder {
+    color: #00000061;
+  }
+}
+
+.profile__select {
+  padding: 6px 16px;  
+  font-size: 14px;
+  font-weight: 400;
+  color: #00000061;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.profile__main-form-inner {
+  @include m.flexbox;
+  flex-grow: 1;
+  margin-top: 27px;
+  padding-top: 20px;
+  border-top: 1px solid #c4c4c4;
+}
+
+.profile__desc-wrapper {
+  max-width: 326px;
+}
+
+.profile__desc {
+  @include m.default-text(0, 14px, 400);
+}
+
+.profile__str {
+  font-weight: 500;
+}
+
+.profile__btn {
+  display: inline-block;
+  min-width: 239px;
+  padding: 0;
+  background-color: #06f;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
 }
