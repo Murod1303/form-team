@@ -49,7 +49,7 @@ elForm.addEventListener("submit", function(evt) {
 })
 
 function changeText(incomingValue, outgoingText) {
-  var change = `${incomingValue}`;
+  var change = ` ${incomingValue}`;
 
   outgoingText.textContent = change;
 }
