@@ -162,10 +162,37 @@ template {
   display: none;
 }
 
+
 :root {
   --main-white-color: #fff;
   --main-font-familiy: Roboto,sans-serif;
   --main-black-color: #000;
+}
+
+=======
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/robotolight.woff2") format("woff2"), url("../fonts/robotolight.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/robotoregular.woff2") format("woff2"), url("../fonts/robotoregular.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/robotoextrabold.woff2") format("woff2"), url("../fonts/robotoextrabold.woff") format("woff");
 }
 
 * {
@@ -175,6 +202,11 @@ template {
 
 html {
   height: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
 }
 
 body {
@@ -187,11 +219,6 @@ body {
           flex-direction: column;
   height: 100%;
   font-family: "Roboto", "Arial", sans-serif;
-}
-
-img {
-  display: block;
-  height: auto;
 }
 
 main {
@@ -685,4 +712,4 @@ main {
   letter-spacing: normal;
   color: #eaeaea;
   text-align: center;
-}/*# sourceMappingURL=main.css.map */
+}
