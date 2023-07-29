@@ -1,0 +1,103 @@
+@use "../mixins" as m;
+@use "../variables" as v;
+.last {
+    background: linear-gradient(258deg, #20e300 23.65%, #00dbe9 100%);
+    padding-top: 46px;
+    padding-bottom: 207px;
+}
+.last__inner {
+    @include m.flexbox(space-between, start, row);
+    border-radius: 50px;
+    background: #fff;
+}
+.last__left-part {
+    padding-top: 27px;
+    padding-left: 56px;
+    @include m.flexbox(space-between, start, column);
+}
+.last__title {
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--main-black-color);
+    font-family: var(--main-font-familiy);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.last__title::before {
+    display:block;
+    width: 121px;
+    height: 67px;
+    margin-bottom: 13px;
+    widows: inherit;
+    background-image: url("/images/look.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    content: "";
+}
+.last__desc {
+    margin: 0;
+    margin-bottom: 24px;
+    color: var(--main-black-color);
+    font-family: var(--main-font-familiy);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.last__form {
+    @include m.flexbox(start, start, column);
+}
+.last__label {
+    margin: 0;
+    color: var(--main-black-color);
+    font-family: var(--main-font-familiy);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @include m.flexbox(space-between, start, column);
+}
+
+.last__input {
+    min-width: 444px;
+    margin-top: 10px;
+    margin-bottom: 27px;
+    min-height: 38px;
+    height: 100%;
+    border-radius: 50px;
+    border: 2px solid #000;
+    opacity: 0.5;
+    background: rgba(255, 255, 255, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+}
+.last__button {
+    max-width: 240px;
+    width: 100%;
+    min-height: 22px;
+    height: 100%;
+    padding: 10px;
+    color: var(--main-white-color);
+    text-align: center;
+    font-family: var(--main-font-familiy);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 20px;
+    background: #06f;
+    border: transparent;
+}
+
+.last__img {
+    border-radius: 0 50px 50px 0;
+}
+.invalid{
+    border:1px solid red;
+}
+
