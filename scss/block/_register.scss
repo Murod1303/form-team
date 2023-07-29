@@ -3,4 +3,93 @@
 
 
 
+.register {
+  height: 100vh;
+  padding-top: 46px;
+  padding-bottom: 27px;
+  background: linear-gradient(270deg, #FF5C00 0%, #E3271B 100%);
+}
+.register__small-wrapper {
+  @include m.flexbox(space-between, flex-start, row);
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.register__inner {
+  padding: 34px 0px 106px 56px;
+}
+.register__title {
+  @include m.flexbox(flex-start, flex-start, row);
+  @include m.default-text(16px, 48px, 800, normal, normal);
+  color: #000;
+}
+.register__title::before {
+  @include m.psevdo-el(71px, 59px, center);
+  background-image: url(../../images/registerbefore.svg);
+  display: block;
+}
+.register__desc {
+  @include m.default-text(28px, 24px, 400, normal, normal);
+  color: #000;
+}
+.register__span {
+  @include m.default-text(0px, 18px, 500, normal, normal);
+  display: block;
+  color: #000;
+  padding-left: 10px;
+}
+.register__input {
+  @include m.default-text(30px, 20px, 500, normal, normal);
+  display: block;
+  max-width: 444px;
+  padding: 3px;
+  padding-left: 7px;
+  color: #000;
+  border-radius: 50px;
+  border: 2px solid #000;
+  background: rgba(255, 255, 255);
+}
+.register__input::placeholder {
+  color: #00000080;
+}
+.register__chckbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: text-bottom;
+}
+.register__checkbox-span {
+  @include m.default-text(19px, 14px, 400, normal, normal);
+  display: inline-block;
+  color: #000;
+}
+.register__btn {
+  @include m.default-text(20px, 24px, 500, normal, normal);
+  display: block;
+  max-width: 222px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #06F;
+}
+.register__desc-account {
+  @include m.default-text(0px, 18px, 400, normal, normal);
+  color: #000;
+}
+.register__desc-span {
+  @include m.default-text(0px, 18px, 600, normal, normal);
+  color: #06F;  
+  text-decoration: none;
+}
+
+.register__bottom-desc {
+  @include m.default-text(0px, 18px, 400, normal, normal);
+  color: #eaeaea;
+  text-align: center;
+}
+
+
 

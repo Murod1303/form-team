@@ -493,4 +493,196 @@ main {
 
 .invalid {
   border: 1px solid red;
+}
+
+.register {
+  height: 100vh;
+  padding-top: 46px;
+  padding-bottom: 27px;
+  background: -webkit-gradient(linear, right top, left top, from(#FF5C00), to(#E3271B));
+  background: linear-gradient(270deg, #FF5C00 0%, #E3271B 100%);
+}
+
+.register__small-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.register__inner {
+  padding: 34px 0px 106px 56px;
+}
+
+.register__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.register__title::before {
+  display: block;
+  width: 71px;
+  height: 59px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  background-image: url(../../images/registerbefore.svg);
+  display: block;
+}
+
+.register__desc {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.register__span {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  display: block;
+  color: #000;
+  padding-left: 10px;
+}
+
+.register__input {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  display: block;
+  max-width: 444px;
+  padding: 3px;
+  padding-left: 7px;
+  color: #000;
+  border-radius: 50px;
+  border: 2px solid #000;
+  background: rgb(255, 255, 255);
+}
+
+.register__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.register__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.register__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.register__input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.register__input::placeholder {
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.register__chckbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: text-bottom;
+}
+
+.register__checkbox-span {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  display: inline-block;
+  color: #000;
+}
+
+.register__btn {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  display: block;
+  max-width: 222px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-color: #06F;
+}
+
+.register__desc-account {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.register__desc-span {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #06F;
+  text-decoration: none;
+}
+
+.register__bottom-desc {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #eaeaea;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
