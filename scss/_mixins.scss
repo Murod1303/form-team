@@ -35,8 +35,4 @@
   content: "";
 }
 
-@mixin responsive($miw) {
-  @media only screen and (min-width: $miw) {
-    @content;
-  }
-}
+
