@@ -1,8 +1,7 @@
-@mixin flexbox($jc, $ai, $fdrc) {
+@mixin flexbox($jc:space-between, $ai:center,) {
   display: flex;
   justify-content: $jc;
   align-items: $ai;
-  flex-direction: $fdrc;
 }
 
 @mixin list {
@@ -33,10 +32,4 @@
   background-repeat: no-repeat;
   background-position: $bgp;
   content: "";
-}
-
-@mixin responsive($miw) {
-  @media only screen and (min-width: $miw) {
-    @content;
-  }
 }
