@@ -225,7 +225,7 @@
 }
 
 .profile__main-form-inner {
-  @include m.flexbox;
+  // @include m.flexbox;
   flex-grow: 1;
   margin-top: 27px;
   padding-top: 20px;

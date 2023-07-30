@@ -1,7 +1,8 @@
-@mixin flexbox($jc:space-between, $ai:center,) {
+@mixin flexbox($jc:space-between, $ai:center, $fdrc) {
   display: flex;
   justify-content: $jc;
   align-items: $ai;
+  flex-direction: $fdrc;
 }
 
 @mixin list {
